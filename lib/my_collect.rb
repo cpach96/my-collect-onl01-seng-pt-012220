@@ -1,5 +1,6 @@
 require 'pry'
 def my_collect(collection)
+  new_array = []
   i = 0 
     while i < collection.length 
       yield(collection[i])
@@ -7,7 +8,7 @@ def my_collect(collection)
   end
   collection
 end
-new_array = []
+
 
 my_collect(new_array) {|n| n.upcase}
 
