@@ -1,12 +1,12 @@
 require 'pry'
-def my_collect(collection)
+def my_collect(array)
   new_array = []
   i = 0 
-    while i < collection.length 
-     new_array.push yield(collection[i])
+    while i < array.length 
+     new_array.push yield(array[i])
       i = i + 1 
   end
-  collection
+  array
 end
 
 
