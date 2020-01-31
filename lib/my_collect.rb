@@ -8,6 +8,7 @@ def my_collect(collection)
   collection
 end
 new_array = []
+
 my_collect(collection) {|n| n.upcase}
 
  
