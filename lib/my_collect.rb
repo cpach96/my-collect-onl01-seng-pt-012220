@@ -9,6 +9,6 @@ def my_collect(collection)
 end
 new_array = []
 
-my_collect(collection) {|n| n.upcase}
+my_collect(new_array) {|n| n.upcase}
 
  
